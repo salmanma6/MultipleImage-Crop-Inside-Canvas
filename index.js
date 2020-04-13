@@ -285,6 +285,7 @@ const hidePopOver = () => {
     destroyPopOver();
 }
 const uploadFileChange = (e) => {
+    hidePopOver();
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     let file = e.target.files[0];
     image.src = "";
