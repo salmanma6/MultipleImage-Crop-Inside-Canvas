@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: -webkit-fill-available;
+}
+#main-content{
+  display: flex;
+  height: 50%;
+  flex-direction: column!important;  
+  position: relative;
+}
+.popover-content{
+  background-color: #91a3b0;
+  display: none;
+}
+#arrow,
+#arrow::before {
+  position:absolute;
+  width: 8px;
+  height: 8px;
+  z-index: -1;
+}
+#arrow::before {
+  content: '';
+  transform: rotate(45deg);
+  background-color:#91a3b0;
+
+}
+.dynamic-center-box{
+  position: absolute;
+}
+.popover-content[data-show] {
+  display: block;
+}  
+canvas{
+  margin: auto;
+}
+.actionsBtns{
+   padding: 10px 20px;
+   border-radius: 5px;
+   background-color: #E6E6FA;
+   margin: auto;
+   cursor: pointer;
+   border:none;
+}
+#download{
+  font-size: 15px
+}
+input{
+  padding: 7px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px
+}
+.popover-content[data-popper-placement^='top'] > #arrow {
+  bottom: -4px;
+}
+
+.popover-content[data-popper-placement^='bottom'] > #arrow {
+  top: -4px;
+}
+
+.popover-content[data-popper-placement^='left'] > #arrow {
+  right: -4px;
+}
+
+.popover-content[data-popper-placement^='right'] > #arrow {
+  left: -4px;
+}
+.remove{
+  padding: 4px 8px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 3px;
+    background: #f88379;
+    color: white;
+    font-weight: bold;
+}
+.action-div{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}

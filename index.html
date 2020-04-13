@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h3>Download multiple crops inside image</h3>
+    <div id="main-content">
+        <div class="popover-content">
+            <input type="text" placeholder="Name for this box" />
+            <button class="remove" id="removeBox">Remove Box</button>
+            <button class="remove" id="closePopUp">Close</button>
+            <div id="arrow" data-popper-arrow></div>
+        </div>
+        <canvas>
+            Sorry your browser doesnt support canvas
+        </canvas>
+        <br>
+        <div class="action-div">
+            <button class="actionsBtns" id="download">Download</button><br> <br> <br>
+            Upload your own image <input class="actionsBtns" id="upload" type="file" placeholder="Upload your own image" /> 
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
